@@ -78,7 +78,7 @@
 ## Pictures
 
 - [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
-- [index files](https://github.com/JOTELLECHEA/myCMS/blob/main/example2.png)
+- [Index files](https://github.com/JOTELLECHEA/myCMS/blob/main/example2.png)
 
 
 
