@@ -25,5 +25,5 @@
     #files.extend(FileUtils.loadListFromFile("data/"))
     process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
    ```
-## Example of invariant mass plots.
+## Pictures
 [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
