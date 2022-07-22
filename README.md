@@ -18,7 +18,7 @@
 ## Create ROOT file from CMS OpenData for multiple runs.
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
-2. Download the file indexes to `data/`
+2. Download the file indexes to [`data/`](https://github.com/JOTELLECHEA/myCMS/tree/main/data)
 
 3. Edit poet_cfg.py via vim/nano. Add the file index as shown below:
 	- For 1 index file. 
@@ -29,7 +29,7 @@
 	    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
 	    process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
 	   ```
-	- For more than 1, you can extend more files.
+	- For more than 1 index file, you can extend more files.
 		Example:
 		```python
 		if isData:
