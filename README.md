@@ -25,7 +25,7 @@
 3. Type the following to create ROOT file
 
    ```bash
-   cmsRun python/poet_cfg.py
+   cmsRun python/poet_cfg.py True
    ```
 4. A ROOT file named "myoutput.root" will be created.
 
@@ -59,7 +59,7 @@
 4. Then type the following to create ROOT file
 
    ```bash
-   cmsRun python/poet_cfg.py
+   cmsRun python/poet_cfg.py True
    ```
 5. A ROOT file named "myoutput.root" will be created.
 
