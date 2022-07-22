@@ -26,4 +26,4 @@
     process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
    ```
 ## Example of invariant mass plots.
-[Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
+![Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
