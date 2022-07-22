@@ -21,10 +21,10 @@
 
 3. Edit poet_cfg.py via vim/nano. Add the file index as shown below:
    Example:
-   `
+   ```python
    if isData:
     files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
-   `
+   ```
 4. Type the following to create ROOT file
 
    ```bash
