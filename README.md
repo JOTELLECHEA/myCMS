@@ -6,7 +6,7 @@
 
    Example:
    ```
-   process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root")
+   process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("==root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root==")
    ```
 3. Type the following to create ROOT file
 
@@ -26,4 +26,4 @@
     process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
    ```
 ## Pictures
-[Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
+1. [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
