@@ -1,4 +1,5 @@
 # CC WANT PBJ
+
 ## Downloading the config file.
    
   - download the git repository.
@@ -11,6 +12,7 @@
     Here you can copy the `python/poet_cfg.py` to your enviroment.
 
 ## Create ROOT file from CMS OpenData for a single run.
+
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
 2. Edit poet_cfg.py via vim/nano. Change the file you want via the xrootd protocol (root://)
@@ -26,7 +28,9 @@
    cmsRun python/poet_cfg.py
    ```
 4. A ROOT file named "myoutput.root" will be created.
+
 ## Create ROOT file from CMS OpenData for multiple runs.
+
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
 2. Download the file indexes to [`data/`](https://github.com/JOTELLECHEA/myCMS/tree/main/data)
@@ -58,7 +62,21 @@
    cmsRun python/poet_cfg.py
    ```
 5. A ROOT file named "myoutput.root" will be created.
+
+## Create Invariant Mass plot.
+
+1. Copy `mass.py` to the directory that `myoutput.root` lives in.
+
+2. Run the script `mass.py` as shown below.
+
+	```bash
+	python -i mass.py
+	```
+- [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
+3. A canvas will open with the plot as can be seen [here]().
+
 ## Pictures
+
 - [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
 
 
