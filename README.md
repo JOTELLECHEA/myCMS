@@ -14,32 +14,39 @@
    ```bash
    cmsRun python/poet_cfg.py
    ```
+4. A ROOT file named "myoutput.root" will be created.
 ## Create ROOT file from CMS OpenData for multiple runs.
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
 2. Download the file indexes to `data/`
 
 3. Edit poet_cfg.py via vim/nano. Add the file index as shown below:
-   Example:
-   ```python
-   if isData:
-    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
-   ```
-4. Type the following to create ROOT file
+	- For 1 index file. 
+  
+	   ```python
+	   if isData:
+	    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
+	    process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
+	   ```
+	- For more than 1, you can extend more files.
+		```python
+		if isData:
+	    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
+	    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_40000_file_index.txt"))
+	    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_70000_file_index.txt"))
+	    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_80000_file_index.txt"))
+	    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_80001_file_index.txt"))
+	    process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
+	    ```
+
+4. Then type the following to create ROOT file
 
    ```bash
    cmsRun python/poet_cfg.py
    ```
 5. A ROOT file named "myoutput.root" will be created.
-   ```
-   if isData:
-    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
-    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_40000_file_index.txt"))
-    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_70000_file_index.txt"))
-    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_80000_file_index.txt"))
-    files.extend(FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_80001_file_index.txt"))
-    #files.extend(FileUtils.loadListFromFile("data/"))
-    process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
-   ```
 ## Pictures
 - [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
+
+
+
