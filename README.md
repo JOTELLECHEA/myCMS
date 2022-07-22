@@ -1,4 +1,15 @@
 # CC WANT PBJ
+## Downloading the config file.
+   
+  - download the git repository.
+  
+    ```
+    git clone https://github.com/JOTELLECHEA/myCMS.git
+    cd myCMS
+    ls
+    ```
+    Here you can copy the `python/poet_cfg.py` to your enviroment.
+
 ## Create ROOT file from CMS OpenData for a single run.
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
