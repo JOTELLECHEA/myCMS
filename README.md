@@ -2,11 +2,11 @@
 ## Create ROOT files from CMS OpenData
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
-2. Edit poet_cfg.py via vim/nano. Change "file.root" with the file you via the xrootd protocol (root://)
+2. Edit poet_cfg.py via vim/nano. Change the file you want via the xrootd protocol (root://)
 
    Example:
    ```
-   process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("==root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root==")
+   process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root")
    ```
 3. Type the following to create ROOT file
 
@@ -26,4 +26,4 @@
     process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
    ```
 ## Pictures
-1. [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
+- [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
