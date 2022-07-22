@@ -5,13 +5,13 @@
 2. Edit poet_cfg.py via vim/nano. Change the file you want via the xrootd protocol (root://)
 
    Example:
-   ```
+   ```bash
    process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root")
    ```
 3. Type the following to create ROOT file
 
    ```bash
-   $ cmsRun python/poet_cfg.py
+   cmsRun python/poet_cfg.py
    ```
 ## Create ROOT file from CMS OpenData for multiple runs.
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
@@ -20,12 +20,12 @@
 
    Example:
    ```bash
-   $ process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root")
+   process.source = cms.Source("PoolSource", fileNames = cms.untracked.vstring("root://eospublic.cern.ch//eos/opendata/cms/Run2015D/DoubleEG/MINIAOD/08Jun2016-v1/10000/00387F48-342F-E611-AB5D-0CC47A4D76AC.root")
    ```
 3. Type the following to create ROOT file
 
    ```bash
-   $ cmsRun python/poet_cfg.py
+   cmsRun python/poet_cfg.py
    ```
 4. A ROOT file named "myoutput.root" will be created.
    ```
