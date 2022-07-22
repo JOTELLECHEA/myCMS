@@ -16,10 +16,7 @@
 ## Create ROOT file from CMS OpenData for multiple runs.
 1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
 
-2. Download the file indexes to 
-```
-data/
-```
+2. Download the file indexes to `data/`
 
 3. Edit poet_cfg.py via vim/nano. Change the file you want via the xrootd protocol (root://)
 
