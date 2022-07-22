@@ -72,8 +72,8 @@
 	```bash
 	python -i mass.py
 	```
-- [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
-3. A canvas will open with the plot as can be seen [here]().
+
+3. A canvas will open with the plot as can be seen [here](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf).
 
 ## Pictures
 
