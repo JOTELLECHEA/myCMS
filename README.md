@@ -1,3 +1,5 @@
 # CC WANT PBJ
 ## Create ROOT files from CMS OpenData
-1. 	Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/)
+1. Find data events of intreset on [CMS OpenData](https://opendata.cern.ch/).
+2. Edit poet_cfg.py with ROOT file.
+3. Use command `cmsRun python/poet_cfg.py`
