@@ -67,10 +67,15 @@
 
 1. Copy `mass.py` to the directory that `myoutput.root` lives in.
 
-2. Run the script `mass.py` as shown below.
+2. Run the script `mass.py` as shown below:
+	- To open `myoutput.root` by default use the command below.
 
 	```bash
 	python -i mass.py
+	```
+	- To open a different ROOT file; pass the file to the script as shown below:
+	```bash
+	python -i mass.py test.root
 	```
 
 3. A canvas will open with the plot as can be seen [here](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf).
