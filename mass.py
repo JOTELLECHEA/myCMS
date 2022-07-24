@@ -4,7 +4,7 @@ import ROOT
 import math
 
 #opens the root file
-f = ROOT.TFile("/Users/jtellechea/HEP/software/myCMS/myoutput.root")
+f = ROOT.TFile("myoutput.root")
 
 #loads TTree into the memory
 MyTree = f.Get("myelectrons/Events")
