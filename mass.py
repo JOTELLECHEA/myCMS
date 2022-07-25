@@ -22,6 +22,8 @@ f = ROOT.TFile(fileName)
 MyTree = f.Get('myelectrons/Events')
 print('Found myelectron TTree.\n')
 
+c1 = ROOT.TCanvas('c1','Canvas 1',710,100,1000,500)
+
 #create a empty histogram
 h = ROOT.TH1D('mass','mass;Invariant Mass[GeV];Events/Bin',120,0,120)
 
@@ -52,4 +54,6 @@ print('There are',histCount,'events with two electrons.\n')
 print('Creating Invariant Mass Plot.')
 time.sleep(3)
 h.Draw()
+c1.SaveAs("InvariantMassPlot.pdf")
+
 
