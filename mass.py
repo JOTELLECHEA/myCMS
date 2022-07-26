@@ -27,7 +27,7 @@ c1 = ROOT.TCanvas('c1','Canvas 1',710,100,1000,500)
 #create a empty histogram
 h = ROOT.TH1D('mass','mass;Invariant Mass[GeV];Events/Bin',120,0,120)
 
-#loop through the entries of the leaf and fill the histogram with data
+#loop through the entries of the leaf and fill the histogram with data∏
 #then draw histogram
 
 entries = MyTree.GetEntries()
