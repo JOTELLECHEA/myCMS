@@ -1,14 +1,27 @@
 # CC WANT PBJ
+## Have to obtain PhysObjectExtractorTool.
+1. Obtain the code from git, then switch to the 2015MiniAOD Branch.
+	```bash
+	git clone git://github.com/cms-legacydata-analyses/PhysObjectExtractorTool.git
+	cd PhysObjectExtractorTool
+	git checkout 2015MiniAOD
+	```
+2. Make sure you are in the /PhysObjectExtractorTool when you use scram.
+	```bash 
+	scram b
+	```
+3. Make sure you have the validation file 'Cert_13TeV_16Dec2015ReReco_Collisions15_25ns_JSON_v2.txt'.
+	It should be in this directory```/PhysObjectExtractorTool/PhysObjectExtractor/data/```
 
 ## Downloading the config file.
    
   - download the git repository.
   
-    ```
-    git clone https://github.com/JOTELLECHEA/myCMS.git
-    cd myCMS
-    ls
-    ```
+   ```bash
+   git clone https://github.com/JOTELLECHEA/myCMS.git
+   cd myCMS
+   ls
+   ```
     Here you can copy the `python/poet_cfg.py` to your enviroment.
 
 ## Create ROOT file from CMS OpenData for a single run.
