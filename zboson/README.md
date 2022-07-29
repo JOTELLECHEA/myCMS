@@ -107,8 +107,8 @@ A script that makes creates a new text file from CMS OpenData index files. To cr
 
 ## Pictures
 
-- [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
-- [Index files](https://github.com/JOTELLECHEA/myCMS/blob/main/example2.png)
+- [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/plots/example1.pdf)
+- [Index files](https://github.com/JOTELLECHEA/myCMS/blob/main//plots/example2.png)
 
 
 
