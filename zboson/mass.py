@@ -66,6 +66,6 @@ c1.cd(2)
 h2.Draw()
 c1.cd(3)
 h3.Draw()
-c1.SaveAs("InvariantMassPlot.pdf")
+c1.SaveAs("plots/InvariantMassPlot.pdf")
 
 
