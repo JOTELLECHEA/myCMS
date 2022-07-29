@@ -57,6 +57,7 @@
 	    files = FileUtils.loadListFromFile("data/CMS_Run2015D_DoubleEG_MINIAOD_08Jun2016-v1_10000_file_index.txt")
 	    process.source = cms.Source("PoolSource", fileNames=cms.untracked.vstring(*files))
 	   ```
+	   * Look at rootFiles.py script to use a select count of files in index by creating a new text file. 
 	- For more than 1 index file, you can extend more files.
 		Example:
 		```python
