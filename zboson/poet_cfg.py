@@ -205,6 +205,7 @@ process.mymets = cms.EDAnalyzer('MetAnalyzer',mets=cms.InputTag("slimmedMETsNewJ
 
 #----- RUN THE JOB! -----#
 process.TFileService = cms.Service("TFileService", fileName=cms.string("myoutput.root"))
+# process.TFileService = cms.Service("TFileService", fileName=cms.string("mydataROOT/myoutput.root"))
 
 if isData:
 	process.p = cms.Path(process.myelectrons+process.mymuons+process.mytaus+process.myphotons+process.mypvertex+
