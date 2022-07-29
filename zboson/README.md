@@ -93,6 +93,18 @@
 
 3. A canvas will open with the plot as can be seen [here](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf).
 
+
+## rootFiles.py
+
+A script that makes creates a new text file from CMS OpenData index files. To create a new file called `myRootFiles.txt`.
+
+- To run script change the index file on line 11 to the index file of your choice.
+- Then run the script for the files in line 13 to 33. 
+	```python 
+	python rootFiles.py 13 33 
+	``` 
+	Now a new file named `myRootFiles.txt` will be created if it already exist then it will be overwritten.
+
 ## Pictures
 
 - [Ivariant Mass](https://github.com/JOTELLECHEA/myCMS/blob/main/example1.pdf)
