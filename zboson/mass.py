@@ -2,7 +2,7 @@
 from ROOT import TCanvas,TH1F
 import ROOT
 import sys
-import time
+
 
 if len(sys.argv) > 1:
     fileName = sys.argv[1]
@@ -11,8 +11,6 @@ if len(sys.argv) > 1:
 else:
     fileName = 'myoutput.root'
     print('No Arguments Passed.\nOpenign default file: myoutput.root')
-
-
 
 
 #opens the root file
