@@ -22,8 +22,8 @@ f = ROOT.TFile(fileName)
 MyTree = f.Get('myelectrons/Events')
 print('Found myelectron TTree.\n')
 
-c1 = ROOT.TCanvas('c1','Canvas 1',1500,300)
-c1.Divide(3,1,0.01,0.01,0)
+c1 = ROOT.TCanvas('c1','Canvas 1',700,900)
+c1.Divide(1,3,0.01,0.01,0)
 
 #create a empty histogram
 h1 = ROOT.TH1D('2e','2e;M_{ee} [GeV/c^{2}];Events/Bin',120,0,120)
